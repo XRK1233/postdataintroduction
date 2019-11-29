@@ -1,0 +1,13 @@
+
+spring:
+  profiles:
+    active: dev
+  main:
+    web-application-type: NONE
+app:
+  memberPath: F:\vue\increment\member
+  tradePath: F:\vue\increment\trade
+  batchSize: 10000
+
+#server:
+#  port: 8098
