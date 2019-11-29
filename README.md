@@ -1,0 +1,7 @@
+# postdataintroduction
+pos数据导出
+1.修改application-prod.yml文件的数据库配置
+2.需要回导到数据库的压缩包目录，商户交易和商户信息分开放到一个文件夹，并在配置文件application.yml中修改：app.memberPath是商户信息压缩包所在的目录
+app.tradePath是商户交易信息所在的目录，app.batchSize是用于大文件中按次读取数据时每次读取的记录条数
+3.数据库中导入data.sql文件
+4.执行PostdataintroductionApplication.java
